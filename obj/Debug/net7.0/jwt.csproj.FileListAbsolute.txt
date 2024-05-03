@@ -48,3 +48,4 @@ D:\Pratham-IT\Jwt\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.Views.dll
 D:\Pratham-IT\Jwt\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll
 D:\Pratham-IT\Jwt\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\Pratham-IT\Jwt\obj\Debug\net7.0\jwt.MvcApplicationPartsAssemblyInfo.cs
+D:\Pratham-IT\Jwt\bin\Debug\net7.0\BCrypt.Net-Core.dll

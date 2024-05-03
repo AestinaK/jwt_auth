@@ -32,11 +32,6 @@ public class LoginController : Controller
     [HttpGet]
     public IActionResult Login()
     {
-        var session = _accessor.HttpContext.Session.GetString("Jwt_token");
-        if (session != null)
-        {
-            
-        }
         var vm = new LoginVm();
         return View(vm);
     }
@@ -93,8 +88,9 @@ public class LoginController : Controller
     //To Authenticate User
     private User Authenticate(LoginVm vm)
     {
+        var user = _context.user.FirstOrDefault(x => x.Name == vm.UserName);
         var currentUser = _context.user.FirstOrDefault(x => x.Name.Equals(vm.UserName)
-                                                            && x.Password == vm.Password);
+                                                            &&(BCrypt.Net.BCrypt.Verify( vm.Password,user.Password)) );
         if (currentUser != null)
         {
             return currentUser;
@@ -105,7 +101,7 @@ public class LoginController : Controller
 
     public IActionResult Logout()
     {
-        _accessor.HttpContext.Session.Clear();
+        _accessor.HttpContext.Session.Remove("Jwt_token");
         return RedirectToAction(nameof(Login));
     }
     

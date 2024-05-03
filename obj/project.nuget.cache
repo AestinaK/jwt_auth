@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "d2hsuDCnI5ny74wlHNPnjfeptrn9Az9XZioVKm2w6olaXQrnGHbaZF7/0iZzMzXkSXJq+1rSTfZKk+7zL2QM5g==",
+  "dgSpecHash": "NnpNwJLWbyTsAwjklnLZtIxRr7g7h3/HZxx4s7XfJ27BW1CyNv7JJ5Iy8YBdwMSVuGF0bpVZjN1e6VaAf7ZdfQ==",
   "success": true,
   "projectFilePath": "D:\\Pratham-IT\\Jwt\\jwt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SERVER\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
+    "C:\\Users\\SERVER\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

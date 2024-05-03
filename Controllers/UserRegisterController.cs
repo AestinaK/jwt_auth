@@ -1,4 +1,3 @@
-using System.Security.Claims;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using jwt.Data;
 using jwt.Models;
@@ -37,7 +36,7 @@ public class UserRegisterController : Controller
                 Name = vm.Name,
                 Email = vm.Email,
                 Role = vm.Role,
-                Password = vm.Password
+                Password = BCrypt.Net.BCrypt.HashPassword(vm.Password)
             };
             _context.user.Add(user);
             _context.SaveChanges();

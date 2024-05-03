@@ -3,6 +3,7 @@ using System.Text;
 using AspNetCoreHero.ToastNotification;
 using jwt.Data;
 using jwt.Manager;
+using jwt.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -56,6 +57,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseSession();
+app.UseMiddleware<JwtSessionMiddleware>();
 app.Use(async (context, next) =>
 {
     var jwToken = context.Session.GetString("Jwt_token");
@@ -63,7 +65,6 @@ app.Use(async (context, next) =>
     {
         context.Request.Headers.Add("Authorization", "Bearer " + jwToken);
     }
-
     await next();
 });
 

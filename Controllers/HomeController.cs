@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using jwt.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -20,6 +21,8 @@ public class HomeController : Controller
     
     public IActionResult Index()
     {
+        var userName = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var userId = User.FindFirst(ClaimTypes.Name)?.Value;
         return View();
     }
 
