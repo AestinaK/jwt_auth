@@ -44,3 +44,7 @@ D:\Pratham-IT\Jwt\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 D:\Pratham-IT\Jwt\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Pratham-IT\Jwt\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\Pratham-IT\Jwt\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Pratham-IT\Jwt\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.Views.dll
+D:\Pratham-IT\Jwt\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll
+D:\Pratham-IT\Jwt\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Pratham-IT\Jwt\obj\Debug\net7.0\jwt.MvcApplicationPartsAssemblyInfo.cs

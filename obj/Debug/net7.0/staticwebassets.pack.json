@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\jwt.bundle.scp.css"
     },
     {
+      "Id": "D:\\Pratham-IT\\Jwt\\wwwroot\\css\\jwt.css",
+      "PackagePath": "staticwebassets\\css\\jwt.css"
+    },
+    {
       "Id": "D:\\Pratham-IT\\Jwt\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

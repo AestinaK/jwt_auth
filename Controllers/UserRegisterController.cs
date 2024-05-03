@@ -1,3 +1,4 @@
+using AspNetCoreHero.ToastNotification.Abstractions;
 using jwt.Data;
 using jwt.Models;
 using jwt.ViewModel;
@@ -8,10 +9,13 @@ namespace jwt.Controllers;
 public class UserRegisterController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly INotyfService _notyfService;
 
-    public UserRegisterController( ApplicationDbContext context)
+    public UserRegisterController( ApplicationDbContext context,
+        INotyfService notyfService)
     {
         _context = context;
+        _notyfService = notyfService;
     }
     // GET
     [HttpGet]
@@ -30,15 +34,18 @@ public class UserRegisterController : Controller
             {
                 Name = vm.Name,
                 Email = vm.Email,
+                Role = vm.Role,
                 Password = vm.Password
             };
             _context.user.Add(user);
             _context.SaveChanges();
-            return RedirectToAction(nameof(Add));
+            return RedirectToAction("Login","Login");
         }
         catch (Exception e)
         {
-            throw new Exception(e.Message);
+           _notyfService.Error(e.Message);
         }
+
+        return View(vm);
     }
 }

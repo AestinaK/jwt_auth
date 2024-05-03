@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bbzZ6NC5RbIZGyYfKo1jVSJ7zxDA97Uc5eZAd7Bl2SsvuK5cmKwV4TY4Om6SqPMDW6pEfdned8QP09ZmLKmw3A==",
+  "dgSpecHash": "d2hsuDCnI5ny74wlHNPnjfeptrn9Az9XZioVKm2w6olaXQrnGHbaZF7/0iZzMzXkSXJq+1rSTfZKk+7zL2QM5g==",
   "success": true,
   "projectFilePath": "D:\\Pratham-IT\\Jwt\\jwt.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SERVER\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -27,6 +28,7 @@
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\SERVER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.0\\npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
     "C:\\Users\\SERVER\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
