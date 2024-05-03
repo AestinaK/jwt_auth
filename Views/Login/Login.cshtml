@@ -2,8 +2,8 @@
 @{
     Layout = null;
 }
-  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
- <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 <link rel="stylesheet" href="~/jwt.styles.css" asp-append-version="true"/>
 <link rel="stylesheet" href="~/css/jwt.css" asp-append-version="true">
 <div class="main-container">
@@ -27,8 +27,14 @@
                     <div class="card-footer">
                         <div class="row">
                             <div class="col"></div>
-                            <button class="btn btn-primary">
-                                Add
+                            <button class="btn btn-primary mb-3">
+                                Login
+                            </button>
+                        </div>
+                        <div class="row ">
+                            <div class="col"></div>
+                            <button class="btn btn-primary" asp-controller="UserRegister" asp-action="Add">
+                                Register
                             </button>
                         </div>
                     </div>

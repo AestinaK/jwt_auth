@@ -16,19 +16,27 @@ public class LoginController : Controller
     private readonly ApplicationDbContext _context;
     private readonly IConfiguration _config;
     private readonly INotyfService _notyfService;
+    private readonly IHttpContextAccessor _accessor;
 
     public LoginController(ApplicationDbContext context,
         IConfiguration config,
-        INotyfService notyfService)
+        INotyfService notyfService,
+        IHttpContextAccessor accessor)
     {
         _context = context;
         _config = config;
         _notyfService = notyfService;
+        _accessor = accessor;
     }
 
     [HttpGet]
     public IActionResult Login()
     {
+        var session = _accessor.HttpContext.Session.GetString("Jwt_token");
+        if (session != null)
+        {
+            
+        }
         var vm = new LoginVm();
         return View(vm);
     }
@@ -42,7 +50,8 @@ public class LoginController : Controller
             var user = Authenticate(vm);
             if (user != null)
             {
-                GenerateToken(user);
+                 var tokenString = GenerateToken(user);
+                 _accessor.HttpContext.Session.SetString("Jwt_token",tokenString);
                 _notyfService.Success("Login Successfully!");
                 return RedirectToAction("Index", "Home");
             }
@@ -92,6 +101,12 @@ public class LoginController : Controller
             
         }
         return null;
+    }
+
+    public IActionResult Logout()
+    {
+        _accessor.HttpContext.Session.Clear();
+        return RedirectToAction(nameof(Login));
     }
     
 }

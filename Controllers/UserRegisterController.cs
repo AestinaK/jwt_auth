@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using jwt.Data;
 using jwt.Models;
@@ -17,6 +18,7 @@ public class UserRegisterController : Controller
         _context = context;
         _notyfService = notyfService;
     }
+
     // GET
     [HttpGet]
     public IActionResult Add()
@@ -48,4 +50,6 @@ public class UserRegisterController : Controller
 
         return View(vm);
     }
+
+   
 }

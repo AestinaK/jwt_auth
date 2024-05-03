@@ -1,16 +1,21 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using jwt.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace jwt.Controllers;
 
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IHttpContextAccessor _accessor;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger,
+        IHttpContextAccessor accessor)
     {
         _logger = logger;
+        _accessor = accessor;
     }
     
     public IActionResult Index()
